@@ -3,8 +3,8 @@ import { env } from './config/env.js';
 
 const app = createApp();
 
-const server = app.listen(env.PORT, () => {
-  console.log(`🚀 [Planora Server]: Running on port ${env.PORT} in ${env.NODE_ENV} mode`);
+const server = app.listen(env.PORT, '0.0.0.0', () => {
+  console.log(`🚀 [Planora Server]: Running on port ${env.PORT} (0.0.0.0) in ${env.NODE_ENV} mode`);
   console.log(`🌐 [Health Check]: http://localhost:${env.PORT}/api/health`);
 });
 

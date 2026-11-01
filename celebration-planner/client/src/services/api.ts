@@ -1,6 +1,10 @@
 import { EventEntity, Expense, Task, VendorQuote, PlanProposal, AssistantResponse } from '../types/event';
 
-const BASE_URL = '/api/v1';
+const rawApiUrl = (import.meta.env.VITE_API_URL as string | undefined)?.trim() || '';
+const cleanApiUrl = rawApiUrl.replace(/\/+$/, '');
+const BASE_URL = cleanApiUrl
+  ? (cleanApiUrl.endsWith('/api/v1') ? cleanApiUrl : `${cleanApiUrl}/api/v1`)
+  : '/api/v1';
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const url = `${BASE_URL}${endpoint}`;

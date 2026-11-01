@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "npm run dev --prefix celebration-planner",
     "build": "npm run build --prefix celebration-planner",
+    "build:client": "npm run build:client --prefix celebration-planner",
+    "build:server": "npm run build:server --prefix celebration-planner",
+    "start:server": "npm run start:server --prefix celebration-planner",
     "test": "npm run test --prefix celebration-planner",
     "typecheck": "npm run typecheck --prefix celebration-planner",
     "lint": "npm run lint --prefix celebration-planner"
