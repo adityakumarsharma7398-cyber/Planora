@@ -1,0 +1,13 @@
+{
+  "name": "planora-root",
+  "version": "1.0.0",
+  "description": "Planora — AI-Powered Celebration Planner. Plan beautifully. Celebrate effortlessly.",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix celebration-planner",
+    "build": "npm run build --prefix celebration-planner",
+    "test": "npm run test --prefix celebration-planner",
+    "typecheck": "npm run typecheck --prefix celebration-planner",
+    "lint": "npm run lint --prefix celebration-planner"
+  }
+}

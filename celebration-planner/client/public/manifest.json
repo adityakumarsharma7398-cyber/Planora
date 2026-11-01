@@ -1,0 +1,17 @@
+{
+  "short_name": "Planora",
+  "name": "Planora — AI-Powered Celebration Planner",
+  "description": "Plan beautifully. Celebrate effortlessly. Intelligent budgeting, task timelines, and vendor intelligence.",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "64x64 32x32"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FAF7FC",
+  "theme_color": "#7C4DCE",
+  "display": "standalone"
+}
+

@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-purple: #7C4DCE;
+  --deep-purple: #6035C4;
+  --lavender: #A477E8;
+  --soft-pink: #E8A0D4;
+  --pale-blush: #F5D9EF;
+  --deep-plum: #29213F;
+  --main-bg: #FAF7FC;
+  --white: #FFFFFF;
+  --main-text: #29213F;
+  --secondary-text: #71677F;
+  --border-color: #E8DFF5;
+  font-family: 'Nunito Sans', sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--main-bg);
+  color: var(--main-text);
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7FC;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8A0D4;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7C4DCE;
+}
+
+/* Accessible focus states with purple glow */
+:focus-visible {
+  outline: 2px solid var(--primary-purple);
+  outline-offset: 2px;
+}
+
+/* Asymmetric corner utilities: Top-left sharp (0), Top-right rounded, Bottom-right sharp (0), Bottom-left rounded */
+.rounded-asym-sm {
+  border-radius: 0 8px 0 8px !important;
+}
+
+.rounded-asym {
+  border-radius: 0 16px 0 16px !important;
+}
+
+.rounded-asym-md {
+  border-radius: 0 16px 0 16px !important;
+}
+
+.rounded-asym-lg {
+  border-radius: 0 24px 0 24px !important;
+}
+
+.rounded-asym-xl {
+  border-radius: 0 32px 0 32px !important;
+}
+
+/* Reusable card & panel shapes with distinctive asymmetric corners */
+.card-asym {
+  border-radius: 0 16px 0 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8DFF5;
+  box-shadow: 0 4px 20px -2px rgba(124, 77, 206, 0.06);
+}
+
+.card-asym-lg {
+  border-radius: 0 24px 0 24px;
+  background-color: #FFFFFF;
+  border: 1px solid #E8DFF5;
+  box-shadow: 0 10px 30px -4px rgba(124, 77, 206, 0.08);
+}
+
+.btn-asym {
+  border-radius: 0 12px 0 12px;
+}
+
+.btn-asym-sm {
+  border-radius: 0 8px 0 8px;
+}
+
+.input-asym {
+  border-radius: 0 12px 0 12px;
+  border: 1px solid #E8DFF5;
+  background-color: #FFFFFF;
+  color: #29213F;
+}
+
+.input-asym:focus {
+  outline: none;
+  border-color: #A477E8;
+  box-shadow: 0 0 0 3px rgba(164, 119, 232, 0.15);
+}
+
+/* Subtle lavender card border */
+.purple-card-border {
+  border: 1px solid #E8DFF5;
+}
+
+/* Gradient helpers */
+.gradient-primary {
+  background: linear-gradient(135deg, #7C4DCE 0%, #A477E8 50%, #E8A0D4 100%);
+}
+
+.gradient-action {
+  background: linear-gradient(135deg, #6035C4 0%, #7C4DCE 60%, #E8A0D4 100%);
+}
+
+.gradient-soft {
+  background: linear-gradient(135deg, #F9F5FD 0%, #F5D9EF 100%);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6035C4 0%, #7C4DCE 50%, #E8A0D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Typography tokens */
+.font-alex {
+  font-family: 'Alex Brush', cursive;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.font-nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.alex-latin-segment {
+  font-family: 'Alex Brush', cursive;
+  font-weight: 400;
+  line-height: 1.1;
+  display: inline;
+}
